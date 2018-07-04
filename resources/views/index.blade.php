@@ -23,18 +23,18 @@
         <span class="navbar-toggler-icon"></span>
     </button>
     <a class="navbar-brand" href="#"></a>
-    <button class="navbar-toggler sidebar-toggler d-md-down-none" type="button">
+    {{--<button class="navbar-toggler sidebar-toggler d-md-down-none" type="button">
         <span class="navbar-toggler-icon"></span>
-    </button>
-    <ul class="nav navbar-nav d-md-down-none">
+    </button>--}}
+{{--    <ul class="nav navbar-nav d-md-down-none">
         <li class="nav-item px-3">
             <a class="nav-link" href="#">Escritorio</a>
         </li>
         <li class="nav-item px-3">
             <a class="nav-link" href="#">Configuraciones</a>
         </li>
-    </ul>
-    <ul class="nav navbar-nav ml-auto">
+    </ul>--}}
+    {{--<ul class="nav navbar-nav ml-auto">
         <li class="nav-item d-md-down-none">
             <a class="nav-link" href="#" data-toggle="dropdown">
                 <i class="icon-bell"></i>
@@ -67,7 +67,7 @@
                 <a class="dropdown-item" href="#"><i class="fa fa-lock"></i> Cerrar sesión</a>
             </div>
         </li>
-    </ul>
+    </ul>--}}
 </header>
 
 <div class="app-body">
@@ -81,7 +81,7 @@
                     Mantenimiento
                 </li>
                 <li class="nav-item nav-dropdown">
-                    <a class="nav-link nav-dropdown-toggle" href="#"><i class="icon-bag"></i> Almacén</a>
+                    <a class="nav-link nav-dropdown-toggle" href="#"><i class="icon-bag"></i> Busqueda</a>
                     <ul class="nav-dropdown-items">
                         <li class="nav-item">
                             <a class="nav-link" href="#"><i class="icon-bag"></i> Categorías</a>
@@ -92,7 +92,7 @@
                     </ul>
                 </li>
                 <li class="nav-item nav-dropdown">
-                    <a class="nav-link nav-dropdown-toggle" href="#"><i class="icon-wallet"></i> Compras</a>
+                    <a class="nav-link nav-dropdown-toggle" href="#"><i class="icon-wallet"></i> Ordenes</a>
                     <ul class="nav-dropdown-items">
                         <li class="nav-item">
                             <a class="nav-link" href="i#"><i class="icon-wallet"></i> Ingresos</a>
@@ -102,7 +102,7 @@
                         </li>
                     </ul>
                 </li>
-                <li class="nav-item nav-dropdown">
+                {{--<li class="nav-item nav-dropdown">
                     <a class="nav-link nav-dropdown-toggle" href="#"><i class="icon-basket"></i> Ventas</a>
                     <ul class="nav-dropdown-items">
                         <li class="nav-item">
@@ -140,7 +140,7 @@
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="main.html"><i class="icon-info"></i> Acerca de...<span class="badge badge-info">IT</span></a>
-                </li>
+                </li>--}}
             </ul>
         </nav>
         <button class="sidebar-minimizer brand-minimizer" type="button"></button>

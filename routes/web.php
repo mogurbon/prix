@@ -18,4 +18,5 @@ Route::get('/', function () {
     return view('content/content');
 });*/
 Route::get('/', 'OrderController@search');
+Route::get('/searchOrder/{orderSearched}', 'OrderController@searchOrder');
 

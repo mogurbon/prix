@@ -23,8 +23,8 @@
                                     <option value="nombre">Nombre</option>
                                     <option value="descripcion">Descripción</option>
                                 </select>
-                                <input type="text" id="texto" name="texto" class="form-control" placeholder="Texto a buscar">
-                                <button type="submit" class="btn btn-primary"><i class="fa fa-search"></i> Buscar</button>
+                                <input type="text" id="texto" name="texto" class="form-control" placeholder="Texto a buscar" v-model="ordersearched">
+                                <button type="submit" class="btn btn-primary" @click="searchorder"><i class="fa fa-search"></i> Buscar</button>
                             </div>
                         </div>
                     </div>
@@ -205,9 +205,57 @@
 </template>
 
 <script>
+
     export default {
-        mounted() {
-            console.log('Component mounted.')
+        data(){
+            return {
+                order: [],
+                ordersearched: '',
+            }
+
+           /* return {
+                booking: {
+                    contact_name: '',
+                    contact_phone: '',
+                    service_id: 1
+                },
+                place: null,
+                autoassign: false,
+                showPanelSearchPhotographer: false,
+                disabledButton: false,
+                search: {
+                    value: '',
+                    operator: 'contains',
+                    column: 'name'
+                },
+                responseData: {},
+                options: []
+            }*/
+
+
+        },
+        methods:{
+            searchorder()
+            {
+
+                let url = 'http://127.0.0.1:8000/searchOrder/' + this.ordersearched;
+                this.axios.get(url)
+                    .then(res => {
+                        console.log(res)
+
+
+                           /* let booking = {}
+                            let data = res.data.data[i]
+                            booking.id = data.id
+                            booking.order_number = data.order_number
+                            booking.photographer = data.name + ' ' + data.last
+                            booking.customer = data.company
+                            booking.start = data.schedule_at
+                            booking.address = data.location
+                            this.events.push(booking)*/
+
+                    })
+            }
         }
     }
 </script>
